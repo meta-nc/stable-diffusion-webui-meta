@@ -1,0 +1,11 @@
+# Python virtual environment
+/venv
+
+# VSCode
+/.vscode
+
+# Rest Client
+/.rest
+
+# Docker
+/docker
