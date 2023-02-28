@@ -1,9 +1,15 @@
 # DEVNOTE
 
+## Settings
+`webui-user.sh` 확인 및 수정
+
 ## Development
 ```bash
-./webui.sh --api --listen --enable-insecure-extension-access
+./webui.sh --api --listen --enable-insecure-extension-access --xformers
 ```
+
+`--xformers`: ControlNet을 위한 옵션
+
 ## 옵션 테스트
 
 ```bash

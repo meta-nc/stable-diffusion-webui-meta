@@ -13,7 +13,7 @@
 #export COMMANDLINE_ARGS=""
 
 # python3 executable
-#python_cmd="python3"
+python_cmd="python"
 
 # git executable
 #export GIT="git"
@@ -44,5 +44,7 @@
 
 # Uncomment to disable TCMalloc
 #export NO_TCMALLOC="True"
+# CUDA_VISIBLE_DEVICES
+export CUDA_VISIBLE_DEVICES=6,7
 
 ###########################################
