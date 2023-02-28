@@ -1,5 +1,13 @@
 # DEVNOTE
 
+## Environment
+- pyenv
+
+```bash
+(stable-diffusion-webui) leeminxji@am04:~/repos/stable-diffusion-webui-meta$ python -V
+Python 3.10.6
+```
+
 ## Settings
 `webui-user.sh` 확인 및 수정
 
