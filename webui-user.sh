@@ -10,7 +10,7 @@
 #clone_dir="stable-diffusion-webui"
 
 # Commandline arguments for webui.py, for example: export COMMANDLINE_ARGS="--medvram --opt-split-attention"
-export COMMANDLINE_ARGS="--xformers --listen --api"
+export COMMANDLINE_ARGS="--api --listen --enable-insecure-extension-access --xformers"
 
 # python3 executable
 # python_cmd="python"

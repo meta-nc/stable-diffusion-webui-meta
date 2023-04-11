@@ -79,3 +79,7 @@ docker run -d --rm --gpus all -P --name stable-diffusion-webui-runner stable-dif
 
 docker logs -f stable-diffusion-webui-runner
 ```
+
+## Server List
+
+- g501 (direct) : http://23.23.105.100
