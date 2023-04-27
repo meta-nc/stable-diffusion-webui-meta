@@ -117,3 +117,7 @@ parser.add_argument('--api-server-stop', action='store_true', help='enable serve
 parser.add_argument('--timeout-keep-alive', type=int, default=30, help='set timeout_keep_alive for uvicorn')
 parser.add_argument("--disable-all-extensions", action='store_true', help="prevent all extensions from running regardless of any other settings", default=False)
 parser.add_argument("--disable-extra-extensions", action='store_true', help=" prevent all extensions except built-in from running regardless of any other settings", default=False)
+
+# Args for parser to recognize --model-dir, --ext-dir for seperate reference.
+parser.add_argument("--model-dir", type=str, default="", help="base path where user models are stored")
+parser.add_argument("--ext-dir", type=str, default="", help="base path where user models are stored")

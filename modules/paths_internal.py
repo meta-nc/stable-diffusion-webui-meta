@@ -23,9 +23,21 @@ cmd_opts_pre = parser_pre.parse_known_args()[0]
 
 data_path = cmd_opts_pre.data_dir
 
-models_path = os.path.join(data_path, "models")
-extensions_dir = os.path.join(data_path, "extensions")
-extensions_builtin_dir = os.path.join(script_path, "extensions-builtin")
 config_states_dir = os.path.join(script_path, "config_states")
 
 roboto_ttf_file = os.path.join(modules_path, 'Roboto-Regular.ttf')
+# Parse --model-dir --ext-dir to reference models, extensions dirs seperately. 
+parser_pre.add_argument("--model-dir", type=str, default="", help="base path where all user data is stored",)
+cmd_opts_pre = parser_pre.parse_known_args()[0]
+
+model_path = cmd_opts_pre.model_dir
+
+
+parser_pre.add_argument("--ext-dir", type=str, default="", help="base path where all user data is stored",)
+cmd_opts_pre = parser_pre.parse_known_args()[0]
+
+ext_path = cmd_opts_pre.ext_dir
+
+models_path = os.path.join(data_path, model_path,  "models")
+extensions_dir = os.path.join(data_path, ext_path, "extensions")
+extensions_builtin_dir = os.path.join(script_path, "extensions-builtin")
