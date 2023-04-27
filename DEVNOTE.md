@@ -11,6 +11,11 @@ Python 3.10.6
 ## Settings
 `webui-user.sh` 확인 및 수정
 
+## NewFeatures
+models 폴더와 extensions 폴더를 webui폴더에 대한 상대경로를 각각 지정할 수 있습니다.
+```bash
+./webui.sh --model-dir ./relative/path/to/models --ext-dir ./relative/path/to/extensions
+```
 ## Development
 ```bash
 ./webui.sh --api --listen --enable-insecure-extension-access --xformers
