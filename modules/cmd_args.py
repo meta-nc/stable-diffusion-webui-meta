@@ -120,4 +120,4 @@ parser.add_argument("--disable-extra-extensions", action='store_true', help=" pr
 
 # Args for parser to recognize --model-dir, --ext-dir for seperate reference.
 parser.add_argument("--model-dir", type=str, default="", help="base path where user models are stored")
-parser.add_argument("--ext-dir", type=str, default="", help="base path where user models are stored")
+parser.add_argument("--ext-dir", type=str, default="", help="base path where user extensions are stored")
