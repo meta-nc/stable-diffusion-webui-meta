@@ -14,10 +14,10 @@ git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot.git 
 
 # install controlnet models 
 printf "Installing Controlnet Models...\n" &&\
-cd ./sd-webui-controlnet/models
-wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_canny.pth &&\
-wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_depth.pth &&\
-wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_openpose.pth &&\
-wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_scribble.pth &&\
-wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_seg.pth &&\
+cd ./sd-webui-controlnet/models &&\
+git lfs &&\
+git clone https://huggingface.co/lllyasviel/ControlNet-v1-1/ &&\
+mv ./ControlNet-v1-1/* ./ &&\
+rm -rf ./ControlNet-v1-1 &&\
+
 printf "Done!\n" 
